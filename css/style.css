@@ -1,0 +1,219 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end reset */
+
+/* Start Styles */
+body, html{
+	position:absolute;
+	background-color: #000;
+	overflow:hidden;
+	height:595px;
+	width:100%;
+	font-family: "Slackey";
+	text-shadow: 1px 1px 1px #000000;
+	filter: dropshadow(color=#000000, offx=1, offy=1);
+}
+
+#player {
+	position:absolute;
+	top:0;
+	left:0;
+	padding:0;
+	margin:0;
+}
+#playerSprite {
+	position:absolute;
+	top:0;
+	left:0;
+	padding:0;
+	margin:0;
+}
+.enemy {
+	position:absolute;
+	top:0;
+	left:0;
+	padding:0;
+	margin:0;
+}
+.enemySprite {
+	position:absolute;
+	top:0;
+	left:0;
+	padding:0;
+	margin:0;
+}
+#floor {
+	position:absolute;
+	top:420px;
+	background-image:url("../img/Floor.jpeg");
+	width:100%;
+	height:100%;
+}
+#thumbControlBG{
+	position: absolute;
+	opacity:0.5;
+	display:none;
+}
+#thumbControl{
+	position: absolute;
+	opacity:0.5;
+	display:none;
+	width:50px;
+}
+#jumpControl{
+	position: absolute;
+	bottom:20px;
+	right:20px;
+	opacity:0.5;
+}
+#startGame{
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color: rgba(0,0,0,0.7);
+	color:#FFF;
+	text-align: center;
+	padding:0;
+	margin:0;
+	font-size: 25px;
+}
+#startGame p{
+	width:800px;
+	margin:auto;	
+}
+#enemyPlaceholder{
+	position: absolute;
+	top:0;
+	left:0;
+}
+#world{
+	position: absolute;
+	top:0;
+	left:0;
+	width:2000px;
+	height:100%;
+}
+#bg0 {
+	position: absolute;
+	top:0;
+	left:0;
+	width:2000px;
+	height:425px;
+	background-image: url('../img/Tile1x1.png');
+}
+#bg1 {
+	position: absolute;
+	top:0;
+	left:0;
+	width:2000px;
+	height:425px;
+	background-image: url('../img/Buffet_FG.png');
+}
+#bg2 {
+	position: absolute;
+	top:0;
+	left:0;
+	width:2000px;
+	height:425px;
+	background-image: url('../img/Columns.png');
+	background-position: -25px 0;
+}
+#fg0 {
+	position: absolute;
+	top:auto;
+	bottom:0;
+	left:0;
+	width:2500px;
+	height:132px;
+	background-image: url('../img/Rope.png');
+}
+#fg1 {
+	position: absolute;
+	top:auto;
+	bottom:-10px;
+	left:0;
+	width:2500px;
+	height:280px;
+	background: url('../img/Buffet.png') repeat-x; margin-left:-100px;
+}
+#crabCount{
+	position:fixed;
+	top:0;
+	right:0;
+	margin:10px;
+	font-size: 50px;
+	text-align:center;
+	padding:25px 0 0 0;
+	background-image:url('../img/Claw.png');
+	background-repeat:no-repeat;
+	width:161px;
+	height:110px;
+	color:#FFF;
+	
+}
+#healthBar{
+	position:fixed;
+	top:0;
+	left:0;
+	margin:10px;
+	font-size: 50px;
+	text-align:left;
+	padding:20px;
+	width:200px;
+	height:170px;
+	color:#F00;
+	opacity: 0.7;
+}
+#betaTag{
+	position:absolute;
+	bottom:10px;
+	left:10px;
+	color:#999;
+}

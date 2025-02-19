@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  <head> 
+    <meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <title>CrayZCrabz Beta</title>
+    <link href='http://fonts.googleapis.com/css?family=Slackey&v2' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css" type="text/css"> 
+    <script type="text/javascript" src="js/Stats.js"></script>
+	<script type="text/javascript" src="js/game.js"></script>
+  </head> 
+  <body>
+  	<!--<div id="bg2"></div>-->
+  	<div id="bg0"></div>
+  	<div id="bg1"></div>
+  	<!--<div id="bg2"></div>-->
+  	
+	<div id="world">
+		<div id="levelPlaceholder">
+			<div id="floor"></div>
+		</div>
+		
+		<div id="player">
+			<img id="playerSprite" src="./img/CoreyStand.gif" />
+		</div>
+		
+		<div id="enemyPlaceholder">
+		</div>
+	</div>
+	
+	<div id="fg1"></div>
+	<div id="fg0"></div>
+	
+	<div id="healthBar">&hearts;&hearts;&hearts;&hearts;</div>
+	<div id="crabCount">0</div>
+	
+	<img id="thumbControlBG" src="./img/circle.gif" />
+	<img id="thumbControl" src="./img/circle.gif" />
+
+	<div id="startGame">
+		<img src="img/instruct.png" width="300px" border="0" />
+		<p>
+			Press <font color='#71C1DE'>SPACEBAR</font> to Jump on the crabs, then stand over them and press <font color='#71C1DE'>DOWN</font> to eat them!
+			<br /><br />
+			Eat as many as you can before the crabs take over <font color='#71C1DE'>SUPER BUFFET</font>!
+			<br /><br />
+			<font color='#71C1DE'>Click anywhere to start!</font>
+		</p>
+	</div>
+	<audio id="music" src="./sounds/music.mp3" autoplay="true" preload="auto" loop="true"></audio>
+	<audio id="burp0" src="./sounds/burp0.mp3" autoplay="false" preload="auto" loop="false"></audio>
+	<audio id="burp1" src="./sounds/burp1.mp3" autoplay="false" preload="auto" loop="false"></audio>
+	<audio id="burp2" src="./sounds/burp2.mp3" autoplay="false" preload="auto" loop="false"></audio>
+	<audio id="burp3" src="./sounds/burp3.mp3" autoplay="false" preload="auto" loop="false"></audio>
+	<audio id="crunch" src="./sounds/crunch.mp3" autoplay="false" preload="auto" loop="false"></audio>
+	<audio id="hit" src="./sounds/Hit.mp3" autoplay="false" preload="auto" loop="false"></audio>
+	<audio id="crack" src="./sounds/crack.mp3" autoplay="false" preload="auto" loop="false"></audio>
+	<audio id="gameOver" src="./sounds/gameOver.mp3" autoplay="false" preload="auto" loop="false"></audio>
+	<div id="betaTag">CrayZcrabz<br />beta v0.5</div>
+	<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+		try {
+			var pageTracker = _gat._getTracker("UA-3514633-2");
+			pageTracker._trackPageview();
+		} catch(err) {}
+	</script>
+  </body> 
+</html>
